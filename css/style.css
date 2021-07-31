@@ -1,0 +1,415 @@
+/* Сброс отступов и стилей списка и полоса */
+body {
+    width: 1920px;
+    height: 5000px;
+    background-color: #fff;
+}
+ul, h2, h1, body, p, button, ul hr, li {
+    margin: 0;
+    padding: 0;
+}
+button {
+    background: #fff;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+hr {
+    border: 1px solid #e5e5e5;
+    max-width: 1920px;
+}
+
+
+/* Оболочка */
+/* Основной контент */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Хедер */
+.header {
+    width: 1920px;
+    background: #EFEFEF;
+}
+
+.header-list {
+    color: #333333;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-list {
+    margin-right: 30px;
+    line-height: 16px;
+}
+.item-list:last-child {
+    margin: 0;
+}
+
+/* Верх контента */
+
+.main-top-content { 
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.main-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-list-item {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 40px;
+}
+.header-list-item-link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-list-item-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo-image {
+    margin-right: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: #66C05D;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.logo-a {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Beauty {
+    text-decoration: none;
+}
+
+.span-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tel {
+    width: 127px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.tel-a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.tel-a:hover {
+    color: #66C05D;
+}
+
+.callback {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 13px 27px;
+    margin-left: 40px;
+    border: 2px solid#66C05D;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+/* Нижняя часть main contenta */
+.main-bottom-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Background */
+.bg-container {
+    background: url("/img/background.png") no-repeat;
+    height: 604px;
+}
+
+/* Центральная часть на бекграунде */
+
+.content {
+    color: #ffffff;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.h1 {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+}
+
+.text {
+    max-width: 308px ;
+    margin-bottom: 50px;
+    color: inherit;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button-about {
+    width: 140px;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 13px 27px;
+    background-color: #66C05D;
+}
+
+
+
+/* Спец предложения */
+
+.sale-h2-img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+/* Товар */
+.sale-item {
+    background-color: #fff;
+    width: 250px;
+    height: 363px;
+}
+
+.sale-item-name {
+    max-width: 190px;
+    height: 33px;
+    font-size: 14px;
+    line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sale-item strong {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.05em;    
+}
+
+.item-button {
+    display: block;
+    border: none;
+    background-color: #66C05D;
+    color: #fff;
+    border-radius: 30px;
+    padding: 9px 40px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+/* Сэйл контейнер */
+.sale {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.sale-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.sale-item:last-child {
+    margin-right: 0;
+}
+
+.sale-item-image {
+    max-width: 125px;
+    height: 166px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.sale-item-name {
+    padding-bottom: 20px;
+}
+
+.sale-item strong {
+    padding-bottom: 20px;
+}
+
+.item-button {
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Перед футером */
+.mail-map {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+/* Первая колонка */
+.mail-input {
+    display: flex;
+    align-items: flex-start;
+    width: 540px;
+    height: 212px;
+    background-color: #66c05d;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+.h3 {
+    max-width: 250px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 25px;    
+}
+
+.mail-text {
+    max-width: 231px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.mail {
+    border: none;
+    width: 225px;
+    border-radius: 30px;
+    color: #c4c4c4;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 9px 0 9px 25px;
+}
+
+.mail-img {
+    margin-left: 84px;
+}
+
+
+
+
+/* Вторая колонка */
+.map {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 212px;
+    background-color: #66c05d;
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+.map-text {
+    max-width: 141px;
+    padding-bottom: 25px;
+}
+
+.map-button {
+    width: 170px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: #66c05d;
+    padding: 9px 28px;
+}
+
+
+/* Футер */
+.footer {
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 120px;
+}
+
+.footer-ul {
+    display: flex;
+}
+
+.footer-li {
+    margin-right: 16px;
+}
+.footer-li:last-child {
+    margin-right: 0;
+}
+.footer-li-a {
+    color: #66c05d;
+    padding: 5px;
+}
+
+.footer-center {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-tel {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 40px;
+}
+
+.footer-button {
+    border-radius: 30px;
+    border: 2px solid #66c05d;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px 26px;
+    width: 170px;
+    height: 40px;
+}
+
+/* Футер-футер */
+
+.footer-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEFEF;
+    color: #828282;
+    height: 64px;
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
