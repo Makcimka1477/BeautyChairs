@@ -8,14 +8,17 @@ ul, h2, h1, body, p, button, ul hr, li {
     margin: 0;
     padding: 0;
 }
-button {
+button, input {
     background: #fff;
+    border: none;
 }
 a {
     text-decoration: none;
     color: #000;
 }
-
+ul {
+    display: flex;
+}
 li {
     list-style: none;
 }
@@ -26,18 +29,18 @@ hr {
 
 
 /* Оболочка */
-/* Основной контент */
-.main-container {
+.wrapper {
+    width: 1920px;
+    background: #EFEFEF;
+}
+
+.container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
 
 /* Хедер */
-.header {
-    width: 1920px;
-    background: #EFEFEF;
-}
 
 .header-list {
     color: #333333;
@@ -225,7 +228,6 @@ hr {
 
 .item-button {
     display: block;
-    border: none;
     background-color: #66C05D;
     color: #fff;
     border-radius: 30px;
@@ -276,7 +278,6 @@ hr {
 
 
 
-
 /* Перед футером */
 .mail-map {
     display: flex;
@@ -284,7 +285,7 @@ hr {
     justify-content: space-between;
 }
 /* Первая колонка */
-.mail-input {
+.mail {
     display: flex;
     align-items: flex-start;
     width: 540px;
@@ -310,8 +311,7 @@ hr {
     margin-bottom: 25px;
 }
 
-.mail {
-    border: none;
+.mail-input {
     width: 225px;
     border-radius: 30px;
     color: #c4c4c4;
@@ -323,8 +323,6 @@ hr {
 .mail-img {
     margin-left: 84px;
 }
-
-
 
 
 /* Вторая колонка */
@@ -363,16 +361,14 @@ hr {
     height: 120px;
 }
 
-.footer-ul {
-    display: flex;
-}
-
 .footer-li {
     margin-right: 16px;
 }
+
 .footer-li:last-child {
     margin-right: 0;
 }
+
 .footer-li-a {
     color: #66c05d;
     padding: 5px;
@@ -401,7 +397,7 @@ hr {
 
 /* Футер-футер */
 
-.footer-footer {
+.copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,7 +405,4 @@ hr {
     color: #828282;
     height: 64px;
     width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
 }
-
