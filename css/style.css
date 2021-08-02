@@ -1,8 +1,7 @@
 /* Сброс отступов и стилей списка и полоса */
 body {
-    width: 1920px;
-    height: 5000px;
     background-color: #fff;
+    max-width: 1920px;
 }
 ul, h2, h1, body, p, button, ul hr, li {
     margin: 0;
@@ -25,26 +24,36 @@ li {
 hr {
     border: 1px solid #e5e5e5;
     max-width: 1920px;
+    margin-bottom: 30px;
 }
 
 
 /* Оболочка */
 .wrapper {
-    width: 1920px;
+    max-width: 1920px;
     background: #EFEFEF;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
 /* Хедер */
+.header {
+    transition: all 0.5s ease-out;
+    margin-bottom: 20px;
+}
 
 .header-list {
     color: #333333;
-    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +69,9 @@ hr {
 /* Верх контента */
 
 .main-top-content { 
+    transition: all 0.5s ease-out;
+    margin-bottom: 20px;
     display: flex;
-    height: 120px;
     justify-content: space-between;
 }
 
@@ -108,17 +118,14 @@ hr {
     justify-content: flex-start;
 }
 
-.Beauty {
-    text-decoration: none;
-}
-
 .span-button {
     display: flex;
     justify-content: flex-end;
 }
 
 .tel {
-    width: 127px;
+    min-width: 127px;
+    display: block;
     margin-bottom: auto;
     margin-top: auto;
 }
@@ -144,24 +151,31 @@ hr {
 
 /* Нижняя часть main contenta */
 .main-bottom-content {
-    margin-top: 30px;
+    transition: all 0.5s ease-out;
     margin-bottom: 30px;
 }
 
 
 /* Background */
 .bg-container {
-    background: url("/img/background.png") no-repeat;
+    background: url("/img/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;    
+    background-size: cover;    
+    width: 100%;
     height: 604px;
 }
 
 /* Центральная часть на бекграунде */
 
 .content {
+    transition: all 0.5s ease-out;
+
     color: #ffffff;
-    height: inherit;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
 }
@@ -171,19 +185,17 @@ hr {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    text-align: left;
 }
 
 .text {
     max-width: 308px ;
     margin-bottom: 50px;
-    color: inherit;
     font-size: 14px;
     line-height: 20px;
 }
 
 .button-about {
-    width: 140px;
+    min-width: 140px;
     color: inherit;
     text-decoration: none;
     border: 2px solid #fff;
@@ -192,26 +204,53 @@ hr {
     background-color: #66C05D;
 }
 
+/* Товар */
+/* Сэйл контейнер */
+.sale {
+    transition: all 1s ease-out;
 
 
-/* Спец предложения */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+}
 
+.sale-item {
+    transition: all 0.5s ease-out;
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+    background-color: #fff;
+    max-width: 250px;
+    max-height: 363px;
+}
+
+.sale-item:last-child {
+    margin-right: 0;
+}
+
+.sale-item-image {
+    max-width: 125px;
+    max-height: 166px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
 .sale-h2-img {
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
-}
-
-/* Товар */
-.sale-item {
-    background-color: #fff;
-    width: 250px;
-    height: 363px;
+    flex-wrap: wrap;
 }
 
 .sale-item-name {
+    padding-bottom: 20px;
     max-width: 190px;
-    height: 33px;
     font-size: 14px;
     line-height: 20px;
     font-size: 14px;
@@ -220,10 +259,11 @@ hr {
 }
 
 .sale-item strong {
+    padding-bottom: 20px;
     font-size: 21px;
     font-weight: 500;
     line-height: 25px;
-    letter-spacing: 0.05em;    
+    letter-spacing: 0.05em;
 }
 
 .item-button {
@@ -235,65 +275,32 @@ hr {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
-}
-
-/* Сэйл контейнер */
-.sale {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.sale-item {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    align-items: center;
-}
-
-.sale-item:last-child {
-    margin-right: 0;
-}
-
-.sale-item-image {
-    max-width: 125px;
-    height: 166px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-left: 65px;
-    padding-right: 65px;
-}
-
-.sale-item-name {
-    padding-bottom: 20px;
-}
-
-.sale-item strong {
-    padding-bottom: 20px;
-}
-
-.item-button {
     margin-bottom: 25px;
 }
 
 
-
 /* Перед футером */
 .mail-map {
+    transition: all 0.5s ease-out;
+
     display: flex;
-    color: #fff;
     justify-content: space-between;
+    
+    color: #fff;
+    min-height: 240px;
+    padding-bottom: 132px;
 }
 /* Первая колонка */
 .mail {
     display: flex;
     align-items: flex-start;
-    width: 540px;
-    height: 212px;
+
+    min-width: 45%;
     background-color: #66c05d;
     margin-right: 30px;
     padding-left: 40px;
     padding-top: 35px;
+    position: relative;
 }
 
 .h3 {
@@ -312,16 +319,18 @@ hr {
 }
 
 .mail-input {
-    width: 225px;
+    min-width: 225px;
     border-radius: 30px;
     color: #c4c4c4;
     font-size: 14px;
     line-height: 16px;
     padding: 9px 0 9px 25px;
+    margin-bottom: 35px;
 }
 
 .mail-img {
-    margin-left: 84px;
+    position: absolute;
+    right: 30px;
 }
 
 
@@ -329,8 +338,7 @@ hr {
 .map {
     display: flex;
     flex-direction: column;
-    width: 540px;
-    height: 212px;
+    width: 45%;
     background-color: #66c05d;
     padding-left: 40px;
     padding-top: 35px;
@@ -342,29 +350,31 @@ hr {
 }
 
 .map-button {
-    width: 170px;
+    max-width: 170px;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 30px;
     background-color: #66c05d;
     padding: 9px 28px;
+    margin-bottom: 35px;
 }
 
 
 /* Футер */
 .footer {
+    transition: all 0.5s ease-out;
+
+    margin-top: 38px;
     display: flex;
-    height: 45px;
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    height: 120px;
+    margin-bottom: 38px;
 }
 
 .footer-li {
     margin-right: 16px;
 }
-
 .footer-li:last-child {
     margin-right: 0;
 }
@@ -377,9 +387,12 @@ hr {
 .footer-center {
     font-size: 14px;
     line-height: 16px;
+    margin-left: 205px;
+    margin-right: 105px;
 }
 
 .footer-tel {
+    min-width: 127px;
     font-size: 16px;
     line-height: 19px;
     margin-right: 40px;
@@ -390,12 +403,11 @@ hr {
     border: 2px solid #66c05d;
     font-size: 14px;
     line-height: 16px;
-    padding-top: 12px 26px;
-    width: 170px;
-    height: 40px;
+    padding: 12px 26px;
+    min-width: 170px;
 }
 
-/* Футер-футер */
+/* Футер */
 
 .copyright {
     display: flex;
@@ -403,6 +415,282 @@ hr {
     align-items: center;
     background-color: #EFEFEF;
     color: #828282;
-    height: 64px;
-    width: 1100px;
+    padding: 25px 0;
+}
+
+/* Медиа-запросы  1100px*/
+ @media (max-width:1100px) {
+     .wrapper {
+        max-width: 1750px;
+        background: #EFEFEF;
+     }
+    .container {
+        max-width: 950px;
+    }
+    .main-top-content{
+        transition: all 0.5s ease-out;
+    }
+    .sale {
+        transition: all 0.5s ease-out;
+        justify-content: center;
+    }
+    .sale-item {
+        margin-right: 20px;
+    }
+    .sale-item:nth-child(1),
+    .sale-item:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .sale-item:nth-child(3) {
+        margin-right: 0;
+    }
+    .mail-map {
+        transition: all 0.5s ease-out;
+        flex-wrap: wrap;
+    }
+    .mail { 
+        margin-right: 0;
+    }
+    .map {
+        margin-right: 0;
+
+    }
+    .footer-center {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 150px;
+        margin-right: 70px;
+    }
+    .footer-tel {
+        min-width: 127px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+ @media (max-width: 900px) {
+     .wrapper {
+        max-width: 1400px;
+        background: #EFEFEF;
+     }
+    .container {
+        max-width: 750px;
+    }
+    .main-top-content{
+        transition: all 0.5s ease-out;
+    }
+    .sale {
+        justify-content: center;
+    }
+    .sale-item:nth-child(1),
+    .sale-item:nth-child(3) {
+        margin-right: 20px;
+    }
+    .sale-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .footer-li {
+        margin-right: 2px;
+    }
+    .footer-li:last-child {
+        margin-right: 0;
+    }
+    .footer-center {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-tel {
+        min-width: 127px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 10px;
+    }
+    .mail-map {
+        /* flex-wrap: wrap; */
+        transition: all 0.5s ease-out;
+    }
+    .mail {
+        margin-left: 20px;
+        margin-right: 0;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .map {
+        margin-left: 20px;
+        margin-right: 0;
+        width: 90%;
+    }
+    .footer-center {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer-tel {
+        min-width: 127px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 5px;
+    }
+    .footer-li {
+        margin-right: 2px;
+    }
+    .footer-li:last-child {
+        margin-right: 0;
+    }
+    .sale-h2-img {
+            padding-top: 40px;
+    }
+} 
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .wrapper {
+        max-width: 1100px;
+        background: #EFEFEF;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+    .main-top-content{
+        transition: all 0.5s ease-out;
+    }
+    .sale-h2-img .h2 {
+        margin-bottom: 10px;
+    }
+    .map {
+        min-width: 50%;
+    }
+    .mail {
+        min-width: 50%;
+    }
+    .mail-img {
+        margin-left: 34px;
+    }
+    .footer-li {
+        margin-right: 0px;
+    }
+    .footer-center {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer-tel {
+        min-width: 127px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 10px;
+    }
+    .mail-img {
+        margin-left: 10px;
+    }
+    .mail-map {
+        padding-bottom: 12px;
+        flex-wrap: wrap;
+    }
+    .mail {
+        margin-right: 0;
+        min-width: 300px;
+        margin-bottom: 20px;
+    }
+    .map {
+        margin-right: 0;
+    }
+    .footer-center {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .footer-tel {
+        min-width: 127px;
+        margin-left: 6px;
+    }
+    .footer-li {
+        margin-right: 2px;
+    }
+    .footer-li:last-child {
+        margin-right: 0;
+    }
+    .main-list-item {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 5px;
+    }
+    .logo-image {
+        margin-right: 0px;
+    }
+    .callback {
+        padding: 5px 15px;
+            margin-left: 5px;
+    }
+    .footer-button {
+        padding: 5px 13px;
+        min-width: 100px;
+    }
+    .item-list {
+        margin-right: 10px;
+        line-height: 16px;
+    }
+    .item-list:last-child {
+        margin: 0;
+    }
+    .main-top-content {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .sale-h2-img {
+        padding-top: 40px;
+    }
+    .sale {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    
+    }
+    .sale-item:nth-child(3) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        max-width: 800px;
+        background: #EFEFEF;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    .sale {
+        justify-content: center;
+    }
+    
+    .sale-item:last-child {
+        margin-bottom: 0;
+    }
+    .mail {
+        width: 95%;
+    }
+    .map {
+        width: 95%;
+    }
+    .sale-item:nth-child(1),
+    .sale-item:nth-child(3) {
+        margin-right: 0;
+    }
 }
