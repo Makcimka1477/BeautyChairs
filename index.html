@@ -10,8 +10,8 @@
     <title>Beauty макет</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <!-- <div class="wrapper"> -->
+        <header class="header wrapper">
             <ul class="header-list">
                 <li class="item-list"><a class='header-list-item-link' href="#">Доставка</a></li>
                 <li class="item-list"><a class='header-list-item-link' href="#">Оплата</a></li>
@@ -20,10 +20,10 @@
                 <li class="item-list"><a class='header-list-item-link' href="#">Контакты</a></li>
             </ul>
         </header>
-    </div>
+    <!-- </div> -->
 
-    <div class="container">            
-        <div class="main-top-content">
+    <!-- Логотип и связь -->
+        <div class="main-top-content container">
             <div class="logo-a">
                 <a class='Beauty' href="index.html">
                 <img class="logo-image" src="img/logo.svg" alt="logo"></a>
@@ -35,10 +35,11 @@
                 <button type='button' class="callback">Обратный звонок</button>
             </div>
         </div>
-    </div>
+<!-- Конец -->
+
     <hr>
-    <div class="container">
-        <div class="main-bottom-content">
+<!-- Список сфер услуг -->
+        <div class="main-bottom-content container">
                 <ul class="main-list">
                     <li class="main-list-item"><a class='main-list-item-link' href="#">Парикмахерская</a></li>
                     <li class="main-list-item"><a class='main-list-item-link' href="#">Барбершоп</a></li>
@@ -48,8 +49,8 @@
                     <li class="main-list-item"><a class='main-list-item-link' href="#">Мебель</a></li>
                 </ul>
         </div>
-    </div>
-
+<!-- Конец -->
+<!-- Основной контент -->
         <div class="bg-container"> 
             <div class='content container'>
                 <h1 class="h1">
@@ -62,16 +63,15 @@
                 <button type='button' class='button-about'><span class='button-about-span'>Подробнее</span></button>        
             </div>
         </div>
-
-
+<!-- Конец -->
+<!-- Список предложений -->
+<div class="container">
         <div class='wrapper'>
-            <div class="container">
                 <div class='sale-h2-img'>
                     <h2 class="h2">Специальные предложения</h2>
                     <img class='car' src="/img/car.svg" alt="carlogo">
                 </div>   
-                
-
+    
                 <div class='sale'>
                     <div class='sale-item'>
                         <img class='sale-item-image' src="/img/item.png" alt="sale-item">
@@ -97,11 +97,13 @@
                         <strong>9 900 P</strong>
                         <button type='button' class='item-button'>Купить</button>
                     </div>
-                </div>
             </div>
+        </div>
+<!-- Конец -->
 
 <!-- MAIL-MAP -->
-            <div class="mail-map container">
+<div class="container">
+            <div class="mail-map">
 <!-- MAIL -->
                 <div class='mail'>
                     <div class='mail-content'>
@@ -132,9 +134,10 @@
                 </div>
             </div>
         </div>
+    </div>
 
-
-        <div class="footer container">
+<div class="container">
+        <div class="footer">
             <div class="footer-left">
                 <ul class="footer-ul">
                     <li class="footer-li"><a class="footer-li-a" href="#">Ютуб</a></li>
@@ -151,8 +154,8 @@
                 <button class="footer-button" type="button">Обратный звонок</button>
             </div>
         </div>
+    </div>
 
-    
         <div class='wrapper'>
             <div class="copyright container">
                 <p class='copyright-text'>
@@ -167,4 +170,3 @@
         </div>
     </body>
 </html>
-
